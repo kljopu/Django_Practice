@@ -22,4 +22,5 @@ urlpatterns = [
     # path('', include('junsu_app.urls')),
     path('', include('signup.urls')),
     path('admin/', admin.site.urls),
+
 ]

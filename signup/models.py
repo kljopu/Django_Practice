@@ -20,16 +20,16 @@ class Customer(models.Model):
     class Meta:
         db_table="Customers"
 
-class Comments(models.Model):
-    customer = models.ForeignKey(Customer, null=False, on_delete=models.CASCADE)
-    comment = models.CharField(max_length = 200, null = True)
-    date_created = models.DateTimeField(auto_now_add=True, null=True)
+# class Comments(models.Model):
+#     customer = models.ForeignKey(Customer, null=False, on_delete=models.CASCADE)
+#     comment = models.CharField(max_length = 200, null = True)
+#     date_created = models.DateTimeField(auto_now_add=True, null=True)
 
-    class Meta:
-        db_table="Comments"
+#     class Meta:
+#         db_table="Comments"
 
-    def __str__(self):
-        return self.comment
+#     def __str__(self):
+#         return self.comment
 
 # class Comment_list(models.model):
 #     customer = models.ForeignKey(Customer, null = False, on_delete=models.SET_NULL)
